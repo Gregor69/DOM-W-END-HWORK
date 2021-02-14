@@ -3,12 +3,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const newFormEntry = document.querySelector('#new-form-entry');
     newFormEntry.addEventListener('submit', handleNewFormEntrySubmit);
 
+    const deleteAllButton = document.querySelector('#delete-all');
+    deleteAllButton.addEventListener('click', handleDeleteAllClick);
+
+
 });
 
 const createChampionsItem = function (form) {
     const listOfChampionsItem = document.createElement('li');
     listOfChampionsItem.classList.add('list-of-champions-item');
 
+// const createChampionsItemRider = function (form) {
+//     const rider = document.createElement ('h2');
+//     rider.textContent = form.rider.value
+//     listOfChampionsItem.appendChild(rider);
+
+    
     const rider = document.createElement('h2');
     rider.textContent = form.rider.value;
     listOfChampionsItem.appendChild(rider);
@@ -50,4 +60,7 @@ const handleNewFormEntrySubmit = function (event) {
     event.target.reset();
 }
 
-
+const handleDeleteAllClick = function (event) {
+    const listOfChampions = document.querySelector('#list-of-champions');
+    listOfChampions.innerHTML = '';
+}
