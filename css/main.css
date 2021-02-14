@@ -1,13 +1,13 @@
 header { 
     font-family: Helvetica;
     background-color: darkgray;
-  }
+}
   
-#form-wrapper {
-    width: 100%;
-    display: -webkit-flex;
-    
-  }
+/* #form-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;    
+  } */
   
 .form-item {
     margin-right: 1.8rem;
@@ -28,12 +28,22 @@ button, input[type="submit"] {
     border-color: darkblue;
     color: darkcyan;
     background-color: lightgray;
-    border-radius: 100%;
+    border-radius: 20%;
   }
 body {
   font-family: Helvetica;
   background: darkgray;
 }
+
+button, input[type="delete-all"] {
+  margin-top: auto;
+  width: 5rem;
+  border-color: darkblue;
+  color: darkcyan;
+  background-color: lightgray;
+  border-radius: 20%;
+}
+
 #list-of-champions {
     display: flex;
     flex-wrap: wrap;
