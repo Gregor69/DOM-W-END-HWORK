@@ -12,12 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 const createChampionsItem = function (form) {
     const listOfChampionsItem = document.createElement('li');
     listOfChampionsItem.classList.add('list-of-champions-item');
-
-// const createChampionsItemRider = function (form) {
-//     const rider = document.createElement ('h2');
-//     rider.textContent = form.rider.value
-//     listOfChampionsItem.appendChild(rider);
-
     
     const rider = document.createElement('h2');
     rider.textContent = form.rider.value;
